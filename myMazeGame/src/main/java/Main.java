@@ -14,10 +14,13 @@ public class Main {
     }
     
     public static void main(String[] args) {
+        //play game kodları
         /*Main mainPlay=new Main();
         maze.intializeMap();//labirenti oluşturacak dizi başlatıldı
         maze.printMaze();
         mainPlay.run();*/
+        
+        //oyuna başlamadan görünecek oyun menüsü.
         Scanner scanner=new Scanner(System.in);
         String menu="**********MAZE GAME MENU************\n1.PLAY\n2.HELP\n3.QUİT\n************************************";
         System.out.println(menu);
