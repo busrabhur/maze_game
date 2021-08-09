@@ -109,7 +109,10 @@ public class MAZE {
         gameMap[9][8] = "Wall";
         gameMap[9][9] = "Finish";//!!!!!!!!
     }
-    
+    public void restart(){
+        player.setX(0);
+        player.setY(0);
+    }
     public String start(){
         String direction=printMenu().toLowerCase();//print menu methodu ile input alınıyor(WASD).
         return AllIsValid(direction);
