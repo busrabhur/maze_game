@@ -6,10 +6,10 @@ A basic maze game built with Java ( internship practice ) <br><br>
 
 📷 Screenshots : <br>
 
-<img src="myMazeGame/images/screen1.PNG" width="300">
-<img src="myMazeGame/images/screen2.PNG" width="300">
-<img src="myMazeGame/images/screen3.PNG" width="300">
-<img src="myMazeGame/images/screen4.PNG" width="300">
+<img src="myMazeGame/images/n0.PNG" width="300">
+<img src="myMazeGame/images/n1.PNG" width="300">
+<img src="myMazeGame/images/n2.PNG" width="300">
+<img src="myMazeGame/images/n3.PNG" width="300">
 
 
 
