@@ -34,6 +34,20 @@ public class Main {
                 maze.intializeMap();//labirenti oluşturacak dizi başlatıldı
                 maze.printMaze();
                 mainPlay.run();
+                if(maze.finished()) {
+                    System.out.println("Do you want to play again?(yes/no)");
+                    Scanner scan2=new Scanner(System.in);
+                    String answer=scan2.nextLine();
+                    if (answer.equalsIgnoreCase("yes")) {
+                         
+                            maze.intializeMap();//labirenti oluşturacak dizi başlatıldı
+                            maze.printMaze();
+                            mainPlay.run();
+                    }else{
+                        System.out.println(menu);
+                        continue;
+                    }
+                }
             }
             else if (selected.equals("2")) {
                 System.out.println("^#######GAME RULES######\n\n-You can play this game with wasd keys\n-When you reach the end, you solve the maze and the game is over.\n\n######################## ");
