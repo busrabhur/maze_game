@@ -63,7 +63,7 @@ public class MAZE {
         gameMap[5][2] = "Wall";
         gameMap[5][3] = "Wall";
         gameMap[5][4] = "Wall";
-        gameMap[5][5] = "Blank";
+        gameMap[5][5] = "Wall";
         gameMap[5][6] = "Wall";
         gameMap[5][7] = "Blank";
         gameMap[5][8] = "Wall";
@@ -126,7 +126,7 @@ public class MAZE {
     }
     
     private String printMenu(){
-        System.out.println("Enter a direction using WASD(w-a-s-d):");
+        System.out.println("\nEnter a direction using WASD(w-a-s-d):");
         String direction=scan.nextLine(); //girilen yön direction değişkenine atandı.
         if (!direction.equalsIgnoreCase("w") && (!direction.equalsIgnoreCase("a")) && (!direction.equalsIgnoreCase("s")) && (!direction.equalsIgnoreCase("d"))) {
             printMenu();//geçerli bir yön girilmediyse menü tekrar yazdırılır.
@@ -147,7 +147,7 @@ public class MAZE {
         }else{
             if (corY!=9) {
                 if (gameMap[corX][corY].equalsIgnoreCase("Wall")) {
-                    System.out.print("||||");
+                    System.out.print("####");
                 }
                 else if (gameMap[corX][corY].equalsIgnoreCase("Blank")) {
                     System.out.print("    ");
@@ -157,7 +157,7 @@ public class MAZE {
                 }
             }else{
                 if (gameMap[corX][corY].equalsIgnoreCase("Wall")) {
-                    System.out.println("||||");
+                    System.out.println("####");
                 }
                 else if (gameMap[corX][corY].equalsIgnoreCase("Blank")) {
                     System.out.println("    ");
